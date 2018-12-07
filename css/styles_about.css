@@ -1,0 +1,206 @@
+/* FIX:
+ * Header image on mobile devices
+ * Logo darker text like footer
+ * Burger menu dropdown readbility
+ * Make the columns responsive!!!!!!!!!! They should stay rows and shrink?
+ * hero body section to end of page
+ * images in hero body margin top gap resizing...
+*/
+
+/* Body styles */
+
+.hero {
+  background: #fff;
+}
+
+.header-image {
+  position: absolute;
+  height: 35%;
+  width: 100%;
+  background: url("img/wanaka.jpg") center / cover;
+  background-position: 100% 62%;
+}
+
+/* Navigation */
+
+.hero .navbar {
+  width: 100%;
+  background-color: rgba(255,255,255,0.3);
+  box-shadow: 0 8px 16px rgba(10,10,10,.1);
+}
+
+.tabs {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+/* green: #207c25 */
+.tabs a {
+  border: none;
+  color: #4a4a4a;
+  font-size: 85%;
+  transition: font-size 0.4s ease;
+}
+
+.tabs li.is-active a, .tabs a:hover {
+  border-bottom: none;
+  color: #fff;
+  font-size: 100%;
+  font-weight: 400;
+}
+
+.navbar-item img {
+  max-height: 4rem;
+}
+
+.navbar-burger {
+  height: auto;
+}
+
+/* hero-body */
+
+.hero-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #4a4a4a;
+  opacity: 0.9;
+  position: absolute;
+  top: 35%;
+  font-size: 120%;
+  padding: 0;
+  padding-top: 3rem;
+}
+
+.info-container {
+  margin: 4% auto;
+  width: 50%;
+}
+
+.hero-body .section {
+  padding: 5% 1.5rem;
+}
+
+.button.is-info.is-outlined {
+  background-color: rgba(32,124,37,0.8);
+  color: #fff;
+  border-color: #fff;
+  font-size: 130%;
+}
+
+
+
+.button.is-info.is-outlined:focus, .button.is-info.is-outlined:hover {
+  background-color: #fff;
+  border-color: #207c25;
+  color: #207c25;
+}
+
+.services {
+  background: rgba(0,0,0,0.05);
+}
+
+.columns {
+  max-width: 60%;
+  margin: 10px auto;
+  position: relative;
+}
+
+/* section .column {
+  border-top: solid rgba(32,124,37, 0.9);
+  border-bottom: solid rgba(32,124,37, 0.9);
+} */
+
+.hero-body .image {
+  background: url("img/lumberjack_square.png") center / cover;
+  background-size: auto;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
+}
+
+.hero-body a {
+  font-size: 2.5rem;
+  color: #363636;
+  font-weight: 600;
+  line-height: 1.125;
+}
+
+.hero-body a:hover {
+  color: #207c25;
+}
+
+/* Responsiveness: media queries */
+
+@media screen and (max-width: 1087px) {
+  .navbar-menu {
+    background-color: rgba(255,255,255,0.05);
+    box-shadow: 0 8px 16px rgba(10,10,10,.1);
+    padding: .5rem 0;
+  }
+  .hero-body .image {
+    background: url("img/lumberjack_square.png") center / cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tabs.is-right ul {
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .navbar-menu {
+    background-color: rgba(0,0,0,0.3);
+    box-shadow: 0 8px 16px rgba(10,10,10,.1);
+    padding: .5rem 0;
+  }
+  .tabs a {
+    color: #ccc;
+  }
+  .tabs li.is-active a, .tabs a:hover {
+    border-bottom: none;
+    color: #fff;
+    font-size: 100%;
+  }
+}
+
+/* Footer */
+
+.hero-foot {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 150%;
+  background: #262C32;
+}
+
+.hero-foot .facebook, .hero-foot .instagram, .hero-foot .email {
+  /* color: #8b9dc3; */
+  color: #fff;
+  font-size: 100%;
+}
+
+.hero-foot .tabs a {
+  border-bottom: none;
+}
+
+.hero-foot .facebook:hover {
+  color: #3b5998;
+  font-size: 100%;
+}
+
+.hero-foot .instagram:hover {
+  color: #cd486b;
+  font-size: 100%;
+}
+
+.hero-foot .email:hover {
+  color: #207c25;
+  font-size: 100%;
+}

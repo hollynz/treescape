@@ -1,0 +1,143 @@
+/* FIX:
+ * Burger menu dropdown readbility
+ * Blurb moves relative to dropdown menu...
+ *
+ *
+ *
+*/
+
+
+/* Body styles */
+
+.hero {
+  background: url("img/sky.jpg") center / cover;
+  background-repeat: no-repeat;
+  background-position: 100% 10%;
+}
+
+/* Navigation */
+
+.hero .navbar {
+  background-color: rgba(255,255,255,0.3);
+  box-shadow: 0 8px 16px rgba(10,10,10,.1);
+}
+
+.tabs {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+/* green: #207c25 */
+.tabs a {
+  border: none;
+  color: #207c25;
+  font-size: 85%;
+  transition: font-size 0.4s ease;
+}
+
+.tabs li.is-active a, .tabs a:hover {
+  border-bottom: none;
+  color: #fff;
+  font-size: 100%;
+  font-weight: 400;
+}
+
+.navbar-item img {
+  max-height: 4rem;
+}
+
+.navbar-burger {
+  height: auto;
+}
+
+/* hero-body */
+
+.hero-body {
+  text-shadow: 0.03em 0.03em #fff;
+  color: #4a4a4a;
+  opacity: 0.9;
+}
+
+.container .title {
+  font-size: 200%;
+  margin-top: -10%;
+  margin-bottom: 2%;
+}
+
+.button.is-info.is-outlined {
+  background-color: #207c25;
+  border-color: #fff;
+  color: #fff;
+  font-size: 160%;
+}
+
+.button.is-info.is-outlined:focus, .button.is-info.is-outlined:hover {
+  background-color: rgba(255,255,255,0.8);
+  color: #207c25;
+  border-color: #207c25;
+}
+
+/* Responsiveness: media queries */
+
+@media screen and (max-width: 1024px) {
+  .container .title {
+    font-size: 140%;
+  }
+  .button.is-info.is-outlined {
+    font-size: 120%;
+  }
+  .hero {
+    background: url("img/sky.jpg") center / cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 1087px) {
+  .navbar-menu {
+    background-color: rgba(0,0,0,0.05);
+    box-shadow: 0 8px 16px rgba(10,10,10,.1);
+    padding: .5rem 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tabs.is-right ul {
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+
+/* Footer */
+
+.hero-foot {
+  font-size: 150%;
+  background: #262C32;
+}
+
+.hero-foot .facebook, .hero-foot .instagram, .hero-foot .email {
+  /* color: #8b9dc3; */
+  color: #fff;
+  font-size: 100%;
+}
+
+.hero-foot .tabs a {
+  border-bottom: none;
+}
+
+.hero-foot .facebook:hover {
+  color: #3b5998;
+  font-size: 100%;
+}
+
+.hero-foot .instagram:hover {
+  color: #cd486b;
+  font-size: 100%;
+}
+
+.hero-foot .email:hover {
+  color: #207c25;
+  font-size: 100%;
+}
